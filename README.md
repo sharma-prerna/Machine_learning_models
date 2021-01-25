@@ -1,6 +1,6 @@
 # Machine learning Models
 **Description** : It is an interactive application to train and test basic ML models. One can analyze the performance of any model by either uploading the external dataset or
-using internal datsets provided uploaded dataset is preprocessed.
+using internal datsets, provided the uploaded dataset is preprocessed.
 
 ---
 **List of Models**
