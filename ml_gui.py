@@ -456,7 +456,7 @@ def multilayer_perceptron_model(algo_type):
 			
 			top.text(f"Output layer size: {layers[-1]}")
 			input_activation = top.selectbox("Activation function for first n-1 layers",["relu","sigmoid","tanh"])
-			output_activation = top.selectbox("Activation function for the ouput layer",["sigmoid","tanh"])
+			output_activation = top.selectbox("Activation function for the ouput layer",["sigmoid"])
 			learning_rate = top.number_input("Learning Rate")
 			num_iterations = top.slider("Iterations",1,10001)
 			
