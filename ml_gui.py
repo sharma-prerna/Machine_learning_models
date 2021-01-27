@@ -306,7 +306,7 @@ def logistic_regression_model(algo_type):
 		num_iterations = top.slider("Iterations",1,5000)
 		TB = top.button("Train")
 		top.markdown("""<ul style="text-align:justify;"><li>Learning is decreasing as number of iterations increases (for e.g. if steady learning rate = 0.1
-				; total iterantions=100 then dynamic learning rate = 0.1/100</li> </ul>""",unsafe_allow_html=True)
+				; total iterations=100 then dynamic learning rate = 0.1/100</li> </ul>""",unsafe_allow_html=True)
 		if TB and len(classes)<=2:
 			
 			train_data[last], test_data[last] = pd.Categorical(train_data[last]), pd.Categorical(test_data[last])
@@ -462,7 +462,7 @@ def multilayer_perceptron_model(algo_type):
 			
 			top.markdown("""<ul style="text-align:justify;"><li>Default activation functions: Relu and Sigmoid respectively (recommended)</li>
 				<li>Learning rate is decreasing as number of iterations increases. (for e.g. if steady learning rate = 0.1
-				; total iterantions=100 then dynamic learning rate = 0.1/100</li> </ul>""",unsafe_allow_html=True)
+				; total iterations=100 then dynamic learning rate = 0.1/100</li> </ul>""",unsafe_allow_html=True)
 			TB = top.button("Train")
 			
 			if TB:
