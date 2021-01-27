@@ -308,22 +308,12 @@ def deep_neural_network(layers,learning_rate,num_iterations,X,Y,input_activation
 
 def predict(X,Y,parameters,input_activation,output_activation):
     A,_,_=forward_propagation_model(X,parameters,input_activation,output_activation)
-    if output_activation=="sigmoid":
-        predictions=(A+1.5)//2
-    elif output_activation=="tanh":
-        predictions=(A+2)//2
-    else:
-        #print("Inavlid output activation function")
-        exit()
-
-    
-    
+    predictions=(A+1.5)//2 
     Y=Y.reshape(predictions.shape)
     wrong=(Y-predictions)
     count=len(wrong[wrong!=0])
     acc = (Y.shape[1]-count)/Y.shape[1]
     #print("Accuracy : {:.2%}".format(acc))
-
     return predictions,acc,A
 
 def print_prediction(test_data,Y_test,P_test,dataset,last):
